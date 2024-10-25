@@ -1,10 +1,8 @@
 import Slider from "@/app/components/Slider";
-import Header from "./components/Header";
 import slider1 from '@/app/images/banner-slide.png';
 import slider2 from '@/app/images/banner-slide-2.png';
 import AboutSection from "./components/AboutUs";
 import Services from "./components/Service";
-import Footer from "./components/Footer";
 
 const sliderData = [
   {
@@ -29,11 +27,9 @@ const sliderData = [
 export default function Home() {
   return (
     <div>
-      <Header/>
       <Slider slides={sliderData} />
       <AboutSection />
       <Services />
-      <Footer />
     </div>
   );
 }
