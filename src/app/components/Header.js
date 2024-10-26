@@ -5,17 +5,27 @@ const Header = () => {
   return (
     <header className="bg-white main-header h-20 hidden">
       <a href="/" className="flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8">
-        <img src="https://i.ibb.co/W6ZXdqN/2021-10-26-16h20-21.png" alt="Logo" />
+        {/* <img src="https://i.ibb.co/W6ZXdqN/2021-10-26-16h20-21.png" alt="Logo" />
+         */}
+         <h2 className="text-2xl font-bold text-primary">Indraprastha</h2>
       </a>
       <nav className="header-links contents font-semibold text-base lg:text-lg">
         <ul className="flex items-center ml-4 xl:ml-8 mr-auto">
-          {['Home', 'Services', 'About', 'Projects', 'Skills', 'Contacts'].map((item, index) => (
-            <li key={index} className={`p-3 xl:p-6 ${item === 'Home' ? 'active' : ''}`}>
-              <a href="#">
-                <span>{item}</span>
+          {[
+            { title: 'Home', path: '/' },
+            { title: 'Services', path: '/services' },
+            { title: 'About', path: '/about-us' },
+            { title: 'Projects', path: '/projects' },
+            { title: 'Career', path: '/career' },
+            { title: 'Contacts', path: '/contacts' }
+          ].map((item, index) => (
+            <li key={index} className={`p-3 xl:p-6 ${item.title === 'Home' ? 'active' : ''}`}>
+              <a href={item.path}>
+                <span>{item.title}</span>
               </a>
             </li>
           ))}
+
           <li className="p-3 xl:p-6">
             <a href="#" className="flex items-center">
               <span>Pages</span>
@@ -46,7 +56,7 @@ const Header = () => {
           <li className="p-1">
             <a href="#" className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5">
               <FaInstagram className="h-4" />
-              
+
             </a>
           </li>
         </ul>
