@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import img from '@/app/images/about.png';
-import {MdOutlineWaterDrop} from 'react-icons/md';
+import { MdOutlineWaterDrop } from 'react-icons/md';
+
 const AboutSection = () => {
     return (
         <section className="mt-12">
-            <div className="container mx-auto px-15">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-15">
                 <div className="flex flex-col md:flex-row">
                     {/* Image Section */}
-                    <div className="md:w-2/5">
+                    <div className="md:w-2/5 mb-6 md:mb-0">
                         <div className="about-img">
                             <Image 
                                 src={img} 
@@ -21,11 +22,11 @@ const AboutSection = () => {
                     </div>
 
                     {/* Content Section */}
-                    <div className="md:w-3/5 md:pl-8 mt-6 md:mt-0">
+                    <div className="md:w-3/5 md:pl-8">
                         <div className="about-right">
-                        <div className="title flex gap-2 items-center">
-                            <MdOutlineWaterDrop/> <h6>WHY CHOOSE US</h6>
-                        </div>
+                            <div className="title flex gap-2 items-center">
+                                <MdOutlineWaterDrop /> <h6>WHY CHOOSE US</h6>
+                            </div>
                             <h2 className="text-2xl font-bold mb-3">We are a Certified and Insured Company.</h2>
                             <p className="mb-6">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
@@ -52,7 +53,7 @@ const AboutSection = () => {
                             </div>
 
                             {/* Statistics Section */}
-                            <div className="grid grid-cols-3 gap-6 mt-8 about-box">
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 about-box">
                                 <div className="text-center">
                                     <h2 className="text-4xl font-bold text-white">567+</h2>
                                     <h4 className="color-secondary font-bold">Projects Launched</h4>
