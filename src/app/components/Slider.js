@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'; // Import core styles
 import 'swiper/css/pagination'; // Import pagination styles
 import { Pagination, Autoplay } from 'swiper/modules'; // Import Swiper modules
+import { FaDropbox, FaWater } from 'react-icons/fa';
+import {MdOutlineWaterDrop} from 'react-icons/md';
 
 const Slider = ({ slides }) => {
   return (
@@ -23,12 +25,12 @@ const Slider = ({ slides }) => {
           }}
         >
           <div className="banner">
-            <div className="container">
-              <div className="hero-content p-4 border-rounded">
-                <h6 className="title mb-3">
-                  <i className="ri-drop-line"></i> {slide.title}
-                </h6>
-                <h2 className="mb-3">{slide.subtitle}</h2>
+            <div className="container px-15">
+              <div className="hero-content border-rounded">
+                <div className="title flex gap-2 items-center">
+                  <MdOutlineWaterDrop/> <h6> {slide.title}</h6>
+                </div>
+                <h2>{slide.subtitle}</h2>
                 <p>{slide.description}</p>
                 <button className="button">{slide.buttonText}</button>
               </div>

@@ -2,15 +2,16 @@ import React from 'react';
 import footerBg from '@/app/images/Group 339.png'; // Import your footer background image
 import logoImg from '@/app/images/banner-slide.png'; // Import the logo image
 import postImg from '@/app/images/IMG_1.JPG'; // Import the post image
+import { FaArrowRight, FaEnvelope, FaMapMarker, FaPhoneAlt, } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="position-relative pt-5">
+    <footer className="position-relative mt-12">
       <div className="footer">
         <img src={footerBg.src} className="footer-bg" alt="footer-bg" />
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div className="container mx-auto px-15">
+          <div className="flex flex-wrap -mx-2">
+            <div className="w-full sm:w-1/2 lg:w-1/4 px-2">
               <div className="footer-col">
                 <div className="logo mb-3">
                   <img src={logoImg.src} alt="footer-img" width="100" />
@@ -22,22 +23,22 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-              <div className="footer-col ms-5">
+            <div className="w-full sm:w-1/2 lg:w-1/4 px-2">
+              <div className="footer-col ms-30">
                 <h5><b>Company</b></h5>
                 <ul>
-                  <li><a href="#"><i className="ri-arrow-right-s-line"></i>Home</a></li>
-                  <li><a href="#"><i className="ri-arrow-right-s-line"></i>About</a></li>
-                  <li><a href="#"><i className="ri-arrow-right-s-line"></i>Products</a></li>
-                  <li><a href="#"><i className="ri-arrow-right-s-line"></i>Contact</a></li>
+                  <li><a href="#"><b>Home</b> </a></li>
+                  <li><a href="#"><b>About</b> </a></li>
+                  <li><a href="#"><b>Products</b> </a></li>
+                  <li><a href="#"><b>Contact</b> </a></li>
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div className="w-full sm:w-1/2 lg:w-1/4 px-2">
               <div className="footer-col">
                 <h5><b>Latest Posts</b></h5>
                 <div className="latest-post">
-                  <div className="d-flex">
+                  <div className="flex">
                     <img src={postImg.src} alt="" width="70" />
                     <div className="ms-3">
                       <p className="mb-0">We are best for any industrial & business solution.</p>
@@ -48,7 +49,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="latest-post">
-                  <div className="d-flex">
+                  <div className="flex">
                     <img src={postImg.src} alt="" width="70" />
                     <div className="ms-3">
                       <p className="mb-0">We are best for any industrial & business solution.</p>
@@ -60,13 +61,13 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div className="w-full sm:w-1/2 lg:w-1/4 px-2">
               <div className="footer-contact">
                 <h5><b>Contacts</b></h5>
                 <ul>
-                  <li><a href="#"><i className="ri-phone-line"></i>8 (800) 695-2686</a></li>
-                  <li><a href="#"><i className="ri-mail-line"></i>oktan@support.com</a></li>
-                  <li><a href="#"><i className="ri-map-pin-line"></i>Baker st. 567, San Diego, CA</a></li>
+                  <li className='flex'><FaPhoneAlt/><a href="#"> <b>8 (800) 695-2686</b> </a></li>
+                  <li className='flex'><FaEnvelope/><a href="#"> <b>oktan@support.com</b> </a></li>
+                  <li className='flex'><FaMapMarker/><a href="#"> <b>Baker st. 567, San Diego, CA</b> </a></li>
                 </ul>
               </div>
             </div>

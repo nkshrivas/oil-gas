@@ -1,10 +1,10 @@
 import React from 'react';
-import { FaTwitter, FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaTwitter, FaFacebookF, FaLinkedinIn, FaInstagram, FaAccusoft, FaPhone } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-lg h-24 hidden md:flex">
-      <a href="/" className="border flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8">
+    <header className="bg-white main-header h-20 hidden">
+      <a href="/" className="flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8">
         <img src="https://i.ibb.co/W6ZXdqN/2021-10-26-16h20-21.png" alt="Logo" />
       </a>
       <nav className="header-links contents font-semibold text-base lg:text-lg">
@@ -46,12 +46,13 @@ const Header = () => {
           <li className="p-1">
             <a href="#" className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5">
               <FaInstagram className="h-4" />
+              
             </a>
           </li>
         </ul>
       </nav>
-      <div className="border flex items-center px-4 lg:px-6 xl:px-8">
-        <button className="bg-black hover:bg-gray-700 text-white font-bold px-4 xl:px-6 py-2 xl:py-3 rounded">Contact Me</button>
+      <div className="flex items-center px-4 lg:px-6 xl:px-8">
+        <button className="button">Contact Me</button>
       </div>
     </header>
   );
