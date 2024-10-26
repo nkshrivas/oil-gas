@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaTwitter, FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -25,18 +26,28 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <nav className="hidden xl:contents">
+      <nav className="hidden xl:flex">
         <ul className="flex items-center mr-4 lg:mr-6 xl:mr-8">
-          {['twitter', 'facebook-f', 'linkedin-in', 'instagram'].map((icon, index) => (
-            <li key={index} className="p-1">
-              <a href="#" className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5">
-                <svg className="h-4" aria-hidden="true" focusable="false" data-prefix={`fab`} data-icon={icon} role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  {/* Add corresponding paths for each icon */}
-                  <path fill="currentColor" d={getIconPath(icon)} />
-                </svg>
-              </a>
-            </li>
-          ))}
+          <li className="p-1">
+            <a href="#" className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5">
+              <FaTwitter className="h-4" />
+            </a>
+          </li>
+          <li className="p-1">
+            <a href="#" className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5">
+              <FaFacebookF className="h-4" />
+            </a>
+          </li>
+          <li className="p-1">
+            <a href="#" className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5">
+              <FaLinkedinIn className="h-4" />
+            </a>
+          </li>
+          <li className="p-1">
+            <a href="#" className="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5">
+              <FaInstagram className="h-4" />
+            </a>
+          </li>
         </ul>
       </nav>
       <div className="border flex items-center px-4 lg:px-6 xl:px-8">
