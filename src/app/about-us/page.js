@@ -91,14 +91,14 @@ const AboutUs = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Why Choose Indraprasth Oil?</h2>
-            <p className="text-lg mb-8">
+            <p className="text-lg mb-8 max-width-900">
             Indraprasth Oil is committed to creating sustainable energy solutions by providing eco-friendly alternatives.
             We work closely with the Indian government to promote biofuel and renewable energy projects that contribute to the country's sustainable future.
             By choosing us, you are not only selecting a trusted energy partner, but also playing a part in making the world a cleaner place.
             </p>
 
             {/* Cards Section */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-15 mt-8">
             {/* Card 1 */}
             <div
                 className="group relative border shadow-lg p-6 rounded-lg overflow-hidden"
@@ -139,7 +139,7 @@ const AboutUs = () => {
       <section className="py-16 bg-gradient-to-r from-green-500 to-teal-500 text-white text-center" data-aos="fade-up">
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Us in Building a Greener Future</h2>
-          <p className="text-lg mb-8">
+          <p className="text-lg mb-8 max-width-520">
             Contact us today to explore our wide range of sustainable energy solutions and take advantage of government subsidies for biofuel plant installations.
           </p>
           <button className="bg-white text-green-600 font-bold py-3 px-6 rounded-full hover:bg-gray-100">
