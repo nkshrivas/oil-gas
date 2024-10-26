@@ -50,8 +50,8 @@ const Services = () => {
             </div>
             <div className="w-full sm:w-1/2 lg:w-1/2 px-2">
               <div className="right-service-text md-mt-2">
-                <h5 className="mb-3">There are many variations of passages of Lorem Ipsum available, have suffered in form, by injected humour.</h5>
-                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure anything embarrassing hidden in the middle of text.</p>
+                <p>There are many variations of passages of Lorem Ipsum available, have suffered in form, by injected humour.
+                 If you are going to use a passage of Lorem Ipsum, you need to be sure anything embarrassing hidden in the middle of text.</p>
               </div>
             </div>
           </div>

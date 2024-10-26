@@ -5,11 +5,11 @@
 :root {
   --white: #fff;
   --black: #000;
-  --primary: #ffd200;
+  --primary: #22c55e;
   --secondary:#0b2a67;
   --grey: #aab9cd;
   --services-card: #f3f3f4;
-  --card-hover: #fcf8f0;
+  --card-hover: #f0fcf2;
 }
 
 @media (prefers-color-scheme: light) {
@@ -48,6 +48,10 @@ li {
 ul {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+p{
+  color: var(--black);
 }
 
 .mt-12 {
@@ -203,7 +207,7 @@ ul {
   padding: 10px 24px;
   border: 1px solid var(--primary);
   transition: 0.3s;
-  color: var(--black);
+  color: var(--white);
   font-size: 14px;
   font-weight: 600;
 }
@@ -388,6 +392,12 @@ font-size: 20px;
 
 .about-right {
   margin-left: 40px;
+}
+
+.about-right h2{
+  font-size: 35px;
+    line-height: 40px;
+    margin-block: 10px !important;
 }
 
 @media (max-width:992px) {

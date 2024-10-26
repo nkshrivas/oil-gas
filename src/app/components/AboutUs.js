@@ -27,7 +27,7 @@ const AboutSection = () => {
                             <MdOutlineWaterDrop/> <h6>WHY CHOOSE US</h6>
                         </div>
                             <h2 className="text-2xl font-bold mb-3">We are a Certified and Insured Company.</h2>
-                            <p className="text-gray-600 mb-6">
+                            <p className="mb-6">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
                             </p>
 
@@ -55,15 +55,15 @@ const AboutSection = () => {
                             <div className="grid grid-cols-3 gap-6 mt-8 about-box">
                                 <div className="text-center">
                                     <h2 className="text-4xl font-bold text-white">567+</h2>
-                                    <p className="text-gray-600">Projects Launched</p>
+                                    <h4 className="color-secondary font-bold">Projects Launched</h4>
                                 </div>
                                 <div className="text-center">
                                     <h2 className="text-4xl font-bold text-white">116+</h2>
-                                    <p className="text-gray-600">Branch Offices</p>
+                                    <h4 className="color-secondary font-bold">Branch Offices</h4>
                                 </div>
                                 <div className="text-center">
                                     <h2 className="text-4xl font-bold text-white">482+</h2>
-                                    <p className="text-gray-600">Happy Clients</p>
+                                    <h4 className="color-secondary font-bold">Happy Clients</h4>
                                 </div>
                             </div>
                         </div>
