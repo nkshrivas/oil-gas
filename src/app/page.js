@@ -3,6 +3,9 @@ import slider1 from '@/app/images/banner-slide.png';
 import slider2 from '@/app/images/banner-slide-2.png';
 import AboutSection from "./components/AboutUs";
 import Services from "./components/Service";
+import DownloadTab from "./components/Downloads";
+import Gallery from "./components/Gallery";
+import ContactForm from "./components/Contact";
 
 const sliderData = [
   {
@@ -28,8 +31,11 @@ export default function Home() {
   return (
     <div>
       <Slider slides={sliderData} />
+      <DownloadTab />
       <AboutSection />
       <Services />
+      <Gallery />
+      <ContactForm />
     </div>
   );
 }

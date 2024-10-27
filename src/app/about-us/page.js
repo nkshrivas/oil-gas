@@ -98,37 +98,38 @@ const AboutUs = () => {
             </p>
 
             {/* Cards Section */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-15 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-6 lg:px-8 mt-8">
             {/* Card 1 */}
             <div
-                className="group relative border shadow-lg p-6 rounded-lg overflow-hidden"
-                data-aos="fade-right"
+              className="group relative border shadow-lg p-6 rounded-lg overflow-hidden"
+              data-aos="fade-right"
             >
-                <h3 className="text-2xl font-bold mb-4 relative z-10">Eco-Friendly Solutions</h3>
-                <p className="relative z-10">We provide energy alternatives like Natural Gas and Bio Coal.</p>
-                <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r from-green-500 to-teal-500  rounded  transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
+              <h3 className="text-2xl font-bold mb-4 relative z-10">Eco-Friendly Solutions</h3>
+              <p className="relative z-10">We provide energy alternatives like Natural Gas and Bio Coal.</p>
+              <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r from-green-500 to-teal-500 rounded transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
             </div>
 
             {/* Card 2 */}
             <div
-                className="group relative border shadow-lg p-6 rounded-lg overflow-hidden"
-                data-aos="fade-up"
+              className="group relative border shadow-lg p-6 rounded-lg overflow-hidden"
+              data-aos="fade-up"
             >
-                <h3 className="text-2xl font-bold mb-4 relative z-10">Government Partnerships</h3>
-                <p className="relative z-10">Partnered with the Indian government, we promote sustainable practices.</p>
-                <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r from-green-500 to-teal-500  rounded  transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
+              <h3 className="text-2xl font-bold mb-4 relative z-10">Government Partnerships</h3>
+              <p className="relative z-10">Partnered with the Indian government, we promote sustainable practices.</p>
+              <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r from-green-500 to-teal-500 rounded transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
             </div>
 
             {/* Card 3 */}
             <div
-                className="group relative border shadow-lg p-6 rounded-lg overflow-hidden"
-                data-aos="fade-left"
+              className="group relative border shadow-lg p-6 rounded-lg overflow-hidden"
+              data-aos="fade-left"
             >
-                <h3 className="text-2xl font-bold mb-4 relative z-10">Innovative Technologies</h3>
-                <p className="relative z-10">Our innovative energy solutions support a greener future.</p>
-                <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r from-green-500 to-teal-500  rounded transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
+              <h3 className="text-2xl font-bold mb-4 relative z-10">Innovative Technologies</h3>
+              <p className="relative z-10">Our innovative energy solutions support a greener future.</p>
+              <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r from-green-500 to-teal-500 rounded transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
             </div>
-            </div>
+          </div>
+
         </div>
         </section>
 
