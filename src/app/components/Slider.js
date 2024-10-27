@@ -24,8 +24,8 @@ const Slider = ({ slides }) => {
             backgroundPosition: 'center'
           }}
         >
-          <div className="banner">
-            <div className="container px-15">
+          <div className="banner px-15">
+            <div className="container">
               <div className="hero-content border-rounded">
                 <div className="title flex gap-2 items-center">
                   <MdOutlineWaterDrop/> <h6> {slide.title}</h6>

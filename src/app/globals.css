@@ -25,6 +25,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
+  font-family:system-ui;
 }
 
 
@@ -58,12 +59,16 @@ p{
   margin-top: 120px;
 }
 
+.mb-2{
+  margin-bottom: 10px !important;
+}
+
 .px-15{
   padding: 0 150px;
 }
 
 .color-primary {
-  color: var(--primary);
+  color:var(--primary);
 }
 
 .color-secondary{
@@ -80,7 +85,7 @@ p{
 }
 
 .main-header ul li a:hover{
-  color: var(--primary);
+  color:var(--primary);
 }
 /* 
 .menu ul li a {
@@ -97,7 +102,7 @@ p{
 }
 
 .menu ul li a:hover {
-  color: var(--primary);
+  color:var(--primary);
 }
 
 .menu-icon {
@@ -105,7 +110,7 @@ p{
 }
 
 .menu-icon {
-  background: var(--primary);
+  background:var(--primary);
   height: 40px;
   width: 40px;
   line-height: 40px;
@@ -122,7 +127,7 @@ p{
 } */
 /* 
 .search {
-  background: var(--primary);
+  background:var(--primary);
   height: 40px;
   width: 40px;
   line-height: 40px;
@@ -187,7 +192,7 @@ p{
 }
 
 .hero-content h2{
-  font-size: 35px;
+  font-size: 40px;
   margin-top: 2px !important;
   font-weight: 700;
 }
@@ -204,9 +209,9 @@ p{
 }
 
 .button {
-  background-color: var(--primary);
+  background-color:var(--primary);
   padding: 10px 24px;
-  border: 1px solid var(--primary);
+  border: 1px solidvar(--primary);
   transition: 0.3s;
   color: var(--white);
   font-size: 14px;
@@ -222,7 +227,7 @@ p{
 .title {
   font-size: 14px;
   letter-spacing: 4px;
-  color: var(--primary);
+  color:var(--primary);
   font-weight: 500;
 }
 
@@ -272,7 +277,7 @@ p{
 }
 
 .services-card:hover h5 {
-  color: var(--primary);
+  color:var(--primary);
 }
 
 .services-card a {
@@ -281,7 +286,7 @@ p{
 }
 
 .services-card a:hover {
-  color: var(--primary);
+  color:var(--primary);
 }
 
 /* about */
@@ -291,17 +296,17 @@ p{
 }
 
 .about-box{
-  background-color: var(--primary);
+  background-color:var(--primary);
   padding: 30px;
 }
 
 .about-box i {
   font-size: 22px;
-  color: var(--primary);
+  color:var(--primary);
 }
 
 .about-main-box {
-  background: var(--primary);
+  background:var(--primary);
   color: var(--white);
   padding: 30px;
 }
@@ -343,7 +348,7 @@ font-size: 20px;
 
 .footer-col ul li a:hover {
   padding-left: 10px;
-  color: var(--primary);
+  color:var(--primary);
 }
 
 .footer-contact li i {
@@ -373,7 +378,7 @@ font-size: 20px;
 }
 
 .footer-contact i {
-  color: var(--primary);
+  color:var(--primary);
 }
 
 .footer-contact ul svg {
@@ -396,9 +401,9 @@ font-size: 20px;
 }
 
 .about-right h2{
-  font-size: 35px;
-    line-height: 40px;
-    margin-block: 15px !important;
+  font-size: 40px;
+  line-height: 45px;
+    margin-block: 18px !important;
 }
 
 .max-width-520{

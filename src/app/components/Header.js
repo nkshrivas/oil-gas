@@ -50,7 +50,7 @@ const Header = () => {
 
             {/* Contact Me Button for Desktop */}
             <li className="p-3 xl:p-6 hidden lg:block">
-              <button className="button">Contact Me</button>
+              <button className="inline-block rounded-md bg-gradient-to-r from-green-500 to-teal-500 text-white px-6 py-2 text-center shadow-md transition duration-300 hover:shadow-lg hover:opacity-90">Contact Me</button>
             </li>
           </ul>
         </nav>

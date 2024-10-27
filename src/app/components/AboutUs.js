@@ -36,8 +36,8 @@ const AboutSection = () => {
     }, []);
 
     return (
-        <section className="mt-12">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-15">
+        <section className="mt-12 px-15">
+            <div className="container mx-auto px-4 sm:px-6 lg:">
                 <div className="flex flex-col md:flex-row">
                     {/* Image Section */}
                     <div className="md:w-2/5 mb-6 md:mb-0" data-aos="fade-right">
@@ -54,8 +54,8 @@ const AboutSection = () => {
                     </div>
 
                     {/* Content Section */}
-                    <div className="md:w-3/5 md:pl-8" data-aos="fade-left">
-                        <div className="about-right">
+                    <div className="md:w-3/5 md:pl-8 mt-2" data-aos="fade-left">
+                        <div className="about-right mt-2">
                             <div className="title flex gap-2 items-center">
                                 <MdOutlineWaterDrop /> <h6>WHY CHOOSE US</h6>
                             </div>
@@ -68,48 +68,34 @@ const AboutSection = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div className="flex items-center gap-2">
                                     <i className="ri-checkbox-circle-line text-green-600"></i>
-                                    <p>Great Technology</p>
+                                    <h5 className="font-bold text-gray-500">Great Technology</h5>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <i className="ri-checkbox-circle-line text-green-600"></i>
-                                    <p>Best Branding</p>
+                                    <h5 className="font-bold text-gray-500">Best Branding</h5>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <i className="ri-checkbox-circle-line text-green-600"></i>
-                                    <p>Delivery On Time</p>
+                                    <h5 className="font-bold text-gray-500">Delivery On Time</h5>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <i className="ri-checkbox-circle-line text-green-600"></i>
-                                    <p>We are Expert</p>
+                                    <h5 className="font-bold text-gray-500">We are Expert</h5>
                                 </div>
                             </div>
 
                             {/* Statistics Section */}
-<<<<<<< HEAD
-                            <div className="grid grid-cols-3 gap-6 mt-8 about-box">
-                                <div className="text-center">
-                                    <h1 className="text-4xl font-bold text-white">567+</h1>
-                                    <h4 className="color-secondary font-bold">Projects Launched</h4>
-                                </div>
-                                <div className="text-center">
-                                    <h1 className="text-4xl font-bold text-white">116+</h1>
-                                    <h4 className="color-secondary font-bold">Branch Offices</h4>
-                                </div>
-                                <div className="text-center">
-                                    <h1 className="text-4xl font-bold text-white">482+</h1>
-=======
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 about-box">
                                 <div className="text-center" data-aos="zoom-in">
-                                    <h2 className="text-4xl font-bold text-white">{projects}+</h2>
+                                    <h1 className="text-5xl font-bold text-white mb-2">{projects}+</h1>
                                     <h4 className="color-secondary font-bold">Projects Launched</h4>
                                 </div>
                                 <div className="text-center" data-aos="zoom-in" data-aos-delay="100">
-                                    <h2 className="text-4xl font-bold text-white">{branches}+</h2>
+                                    <h1 className="text-5xl font-bold text-white mb-2">{branches}+</h1>
                                     <h4 className="color-secondary font-bold">Branch Offices</h4>
                                 </div>
                                 <div className="text-center" data-aos="zoom-in" data-aos-delay="200">
-                                    <h2 className="text-4xl font-bold text-white">{clients}+</h2>
->>>>>>> main
+                                    <h1 className="text-5xl font-bold text-white mb-2">{clients}+</h1>
                                     <h4 className="color-secondary font-bold">Happy Clients</h4>
                                 </div>
                             </div>
