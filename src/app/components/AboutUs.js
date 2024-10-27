@@ -54,15 +54,15 @@ const AboutSection = () => {
                             {/* Statistics Section */}
                             <div className="grid grid-cols-3 gap-6 mt-8 about-box">
                                 <div className="text-center">
-                                    <h2 className="text-4xl font-bold text-white">567+</h2>
+                                    <h1 className="text-4xl font-bold text-white">567+</h1>
                                     <h4 className="color-secondary font-bold">Projects Launched</h4>
                                 </div>
                                 <div className="text-center">
-                                    <h2 className="text-4xl font-bold text-white">116+</h2>
+                                    <h1 className="text-4xl font-bold text-white">116+</h1>
                                     <h4 className="color-secondary font-bold">Branch Offices</h4>
                                 </div>
                                 <div className="text-center">
-                                    <h2 className="text-4xl font-bold text-white">482+</h2>
+                                    <h1 className="text-4xl font-bold text-white">482+</h1>
                                     <h4 className="color-secondary font-bold">Happy Clients</h4>
                                 </div>
                             </div>
