@@ -85,7 +85,6 @@ const AboutSection = () => {
                             </div>
 
                             {/* Statistics Section */}
-<<<<<<< HEAD
                             <div className="grid grid-cols-3 gap-6 mt-8 about-box">
                                 <div className="text-center">
                                     <h1 className="text-4xl font-bold text-white">567+</h1>
@@ -97,19 +96,6 @@ const AboutSection = () => {
                                 </div>
                                 <div className="text-center">
                                     <h1 className="text-4xl font-bold text-white">482+</h1>
-=======
-                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 about-box">
-                                <div className="text-center" data-aos="zoom-in">
-                                    <h2 className="text-4xl font-bold text-white">{projects}+</h2>
-                                    <h4 className="color-secondary font-bold">Projects Launched</h4>
-                                </div>
-                                <div className="text-center" data-aos="zoom-in" data-aos-delay="100">
-                                    <h2 className="text-4xl font-bold text-white">{branches}+</h2>
-                                    <h4 className="color-secondary font-bold">Branch Offices</h4>
-                                </div>
-                                <div className="text-center" data-aos="zoom-in" data-aos-delay="200">
-                                    <h2 className="text-4xl font-bold text-white">{clients}+</h2>
->>>>>>> main
                                     <h4 className="color-secondary font-bold">Happy Clients</h4>
                                 </div>
                             </div>
