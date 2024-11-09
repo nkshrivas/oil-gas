@@ -477,3 +477,19 @@ font-size: 20px;
     padding: 1.5rem; /* More padding for larger screens */
   }
 }
+/* Add this to your global or module CSS file */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-50px);  /* Start off-screen above */
+    opacity: 0;  /* Fully transparent */
+  }
+  100% {
+    transform: translateY(0);  /* End at normal position */
+    opacity: 1;  /* Fully visible */
+  }
+}
+
+/* Apply the animation to the content box */
+.hero-content {
+  animation: slideInFromTop 0.8s ease-out forwards;
+}

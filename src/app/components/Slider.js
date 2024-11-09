@@ -4,7 +4,7 @@ import 'swiper/css'; // Import core styles
 import 'swiper/css/pagination'; // Import pagination styles
 import { Pagination, Autoplay } from 'swiper/modules'; // Import Swiper modules
 import { FaDropbox, FaWater } from 'react-icons/fa';
-import {MdOutlineWaterDrop} from 'react-icons/md';
+import { MdOutlineWaterDrop } from 'react-icons/md';
 
 const Slider = ({ slides }) => {
   return (
@@ -16,19 +16,24 @@ const Slider = ({ slides }) => {
       className="mySwiper"
     >
       {slides.map((slide, index) => (
+        // Check if the slide has a video
         <SwiperSlide
           key={index}
           style={{
-            backgroundImage: `url(${slide.image.src})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            direction: 'vertical',
+            effect: 'slide',
+            background: slide.video ? `url(${slide.video})` : `url(${slide.image})`,
           }}
         >
           <div className="banner">
             <div className="container px-15">
               <div className="hero-content border-rounded">
                 <div className="title flex gap-2 items-center">
-                  <MdOutlineWaterDrop/> <h6> {slide.title}</h6>
+                  <MdOutlineWaterDrop />
+                  <h6>{slide.title}</h6>
                 </div>
                 <h2>{slide.subtitle}</h2>
                 <p>{slide.description}</p>
