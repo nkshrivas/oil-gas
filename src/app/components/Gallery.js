@@ -18,12 +18,12 @@ const Gallery = () => {
   };
 
   return (
-    <section className="gallery py-16">
+    <section className="gallery py-16 lg:px-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-15">
-        <h2 className="text-3xl font-bold text-center mb-8">Gallery</h2>
+        <h2 className="text-3xl font-bold text-center heading">Gallery</h2>
         
         {/* Main Image Display */}
-        <div className="relative mb-8 w-full h-96">
+        <div className="relative mb-8 w-full h-96 rounded mt-6">
           <Image
             src={images[selectedImageIndex]}
             alt={`Gallery image ${selectedImageIndex + 1}`}

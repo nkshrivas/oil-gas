@@ -106,7 +106,7 @@ const AboutUs = () => {
             >
               <h3 className="text-2xl font-bold mb-4 relative z-10">Eco-Friendly Solutions</h3>
               <p className="relative z-10">We provide energy alternatives like Natural Gas and Bio Coal.</p>
-              <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r from-green-500 to-teal-500 rounded transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
+              <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r bg-primary rounded transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
             </div>
 
             {/* Card 2 */}
@@ -116,7 +116,7 @@ const AboutUs = () => {
             >
               <h3 className="text-2xl font-bold mb-4 relative z-10">Government Partnerships</h3>
               <p className="relative z-10">Partnered with the Indian government, we promote sustainable practices.</p>
-              <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r from-green-500 to-teal-500 rounded transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
+              <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r bg-primary rounded transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
             </div>
 
             {/* Card 3 */}
@@ -126,7 +126,7 @@ const AboutUs = () => {
             >
               <h3 className="text-2xl font-bold mb-4 relative z-10">Innovative Technologies</h3>
               <p className="relative z-10">Our innovative energy solutions support a greener future.</p>
-              <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r from-green-500 to-teal-500 rounded transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
+              <div className="absolute bottom-0 left-0 w-0 h-0 bg-gradient-to-r bg-primary rounded transition-all duration-700 ease-out group-hover:w-full group-hover:h-full"></div>
             </div>
           </div>
 
@@ -137,7 +137,7 @@ const AboutUs = () => {
 
 
       {/* Call to Action Section */}
-      <section className="py-16 bg-gradient-to-r from-green-500 to-teal-500 text-white text-center" data-aos="fade-up">
+      <section className="py-16 bg-gradient-to-r bg-primary text-white text-center" data-aos="fade-up">
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Us in Building a Greener Future</h2>
           <p className="text-lg mb-8 max-width-520">

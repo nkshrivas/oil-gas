@@ -6,7 +6,7 @@ import { FaArrowRight, FaEnvelope, FaMapMarker, FaPhoneAlt } from 'react-icons/f
 
 const Footer = () => {
   return (
-    <footer className="mt-12 relative">
+    <footer>
       <div className="footer">
         <img src={footerBg.src} className="footer-bg" alt="footer-bg" />
         <div className="container mx-auto px-4 sm:px-15">

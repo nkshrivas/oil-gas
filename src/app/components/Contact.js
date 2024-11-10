@@ -36,57 +36,56 @@ const ContactSection = () => {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="flex flex-col md:flex-row bg-gradient-to-r from-green-500 to-teal-500 py-16">
+      <div className="contact-section bg-gradient-to-r bg-primary py-16 container lg:px-8">
         {/* Content Section */}
-        <div className="flex-1 text-white p-8 md:pr-16">
+        <div className="flex-1 text-white p-8 md:pr-16 z-10">
           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-          <p className="mb-6">
-            We would love to hear from you! Whether you have a question or need assistance, our team is here to help. 
+          <p className="mb-6 mt-5">
+            We would love to hear from you! Whether you have a question or need assistance, our team is here to help. Feel free to reach out to us via the contact form, and we will get back to you shortly.</p>
+            <p>Thank you for considering us!
           </p>
-          <p className="mb-4">Feel free to reach out to us via the contact form, and we will get back to you shortly.</p>
-          <p>Thank you for considering us!</p>
+          {/* <p className="mb-4"></p> */}
         </div>
 
         {/* Contact Form Section */}
         <div className="flex-1 bg-white rounded-lg p-8 shadow-lg z-10 relative">
-          <h2 className="text-2xl font-bold mb-6">Contact Us</h2>
-          <form onSubmit={(e) => { e.preventDefault(); console.log('Form submitted'); }}>
-            <div className="mb-4">
+          <h1 className="text-2xl font-bold text-center heading">Contact Us</h1>
+          <form className='contact-form' onSubmit={(e) => { e.preventDefault(); console.log('Form submitted'); }}>
+            <div className="mb-4 mt-5">
               <label className="block text-sm font-semibold mb-2" htmlFor="name">Name</label>
               <input
                 type="text"
-                id="name"
+                id="name" placeholder='Enter Name...'
                 required
-                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full  border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
               />
             </div>
 
             <div className="mb-4">
               <label className="block text-sm font-semibold mb-2" htmlFor="email">Email</label>
               <input
-                type="email"
+                type="email" placeholder='Enter Email...'
                 id="email"
                 required
-                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full  border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
               />
             </div>
 
             <div className="mb-4">
               <label className="block text-sm font-semibold mb-2" htmlFor="message">Message</label>
               <textarea
-                id="message"
+                id="message" placeholder='Message'
                 required
                 rows="4"
-                className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full  border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
               />
             </div>
 
-            <button
-              type="submit"
-              className="w-full bg-green-500 text-white font-semibold py-3 rounded hover:bg-green-600 transition duration-200"
-            >
+            <div className='flex justify-center'>
+            <button type="submit" className="button">
               Send Message
             </button>
+            </div>
           </form>
         </div>
       </div>

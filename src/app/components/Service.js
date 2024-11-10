@@ -77,7 +77,7 @@ const Services = () => {
                     </div>
 
                     {/* Background gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r bg-primary opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"></div>
                   </div>
                 </div>
               ))}

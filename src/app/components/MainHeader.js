@@ -49,8 +49,8 @@ const MainHeader = () => {
                     <div className="flex items-center space-x-3">
                         <FaPhoneAlt className="h-7 w-7 lg:h-8 lg:w-8 text-primary" />
                         <div>
-                            <p className={`${isScrolled? 'text-sm lg:text-base font-medium': 'text-white'} `}>Have a question? Call us now</p>
-                            <p className={`${isScrolled? 'text-sm lg:text-base font-medium': 'text-white'} `}>(123) 456-7890</p>
+                            <p className={`${isScrolled? 'text-sm': 'text-white text-sm'} `}>Have a question? Call us now</p>
+                            <p className={`${isScrolled? 'text-sm': 'text-white text-sm'} `}>(123) 456-7890</p>
                         </div>
                     </div>
 
@@ -58,15 +58,15 @@ const MainHeader = () => {
                     <div className="flex items-center space-x-3">
                         <FaMapMarkerAlt className="h-7 w-7 lg:h-8 lg:w-8 text-primary" />
                         <div>
-                            <p className={`${isScrolled? 'text-sm lg:text-base font-medium': 'text-white'} `}>Visit our location</p>
-                            <p className={`${isScrolled? 'text-sm lg:text-base font-medium': 'text-white'} `}>123 Main St, City, Country</p>
+                            <p className={`${isScrolled? 'text-sm': 'text-white text-sm'} `}>Visit our location</p>
+                            <p className={`${isScrolled? 'text-sm': 'text-white text-sm'} `}>123 Main St, City, Country</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Request Callback Button */}
                 <div className="hidden lg:block">
-                    <button className="bg-blue-500 text-white py-2 px-6 rounded-lg text-lg hover:bg-blue-600 transition duration-200">
+                    <button className="button">
                         Request Callback
                     </button>
                 </div>

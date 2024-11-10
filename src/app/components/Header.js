@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`bg-white main-header flex items-center justify-between px-4 lg:px-6 xl:px-8 sticky top-14 z-50 
+        className={`bg-primary main-header flex items-center justify-between px-4 lg:px-6 xl:px-8 sticky top-14 z-50 
           ${isScrolled ? 'h-14' : 'h-20'} border-b-2 border-gray-300 transition-all duration-300 ease-in-out`}
       >
         {/* Hamburger Menu Icon */}
@@ -57,11 +57,11 @@ const Header = () => {
             ].map((item, index) => (
               <li
                 key={index}
-                className={`p-3 xl:p-6 ${item.title === 'Home' ? 'active' : ''} 
-                 border-gray-300` }
+                className={`p-3 xl:p-4 menu border-l ${item.title === 'Home' ? 'active' : ''} 
+                 ` }
               >
                 <a href={item.path}>
-                  <span className={`transition-all duration-300 ${isScrolled ? 'text-xs' : 'text-base'}`}>
+                  <span className={`transition-all duration-300 ${isScrolled ? 'text-sm' : 'text-base'}`}>
                     {item.title}
                   </span>
                 </a>

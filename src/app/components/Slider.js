@@ -29,7 +29,7 @@ const Slider = ({ slides }) => {
           }}
         >
           <div className="banner">
-            <div className="container px-15">
+            <div className="container px-15 lg:px-8">
               <div className="hero-content border-rounded">
                 <div className="title flex gap-2 items-center">
                   <MdOutlineWaterDrop />
