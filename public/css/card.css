@@ -1,0 +1,129 @@
+/* Wrapper styles */
+.wrapper {
+  margin: 10vh 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  padding: 0 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  width: 100%;
+}
+
+/* Card styles */
+.card-container {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  border: none;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 450px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  border-radius: 20px;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card:hover .card-overlay {
+  background: rgba(255, 186, 33, 0.7); /* Gradient background on hover */
+}
+
+.card-meta {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 0;
+  transition: transform 300ms ease;
+}
+
+.card-title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-title:hover {
+  /* text-decoration: underline; */
+  transform: scale(1.05, 1.05);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.media-img {
+  border-radius: 50%;
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.media-body {
+  color: #fff;
+}
+
+.author-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-body {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card:hover .card-body {
+  margin-top: 30px;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card-footer {
+  background: none;
+  border-top: none;
+  margin-top: 20px;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .card {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+    min-height: 300px;
+  }
+}

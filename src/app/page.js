@@ -7,6 +7,7 @@ import DownloadTab from "./components/Downloads";
 import Gallery from "./components/Gallery";
 import ContactForm from "./components/Contact";
 import Header from "./components/Header";
+import CardWrapper from "./components/CardWrapper";
 
 const sliderData = [
   {
@@ -35,6 +36,7 @@ export default function Home() {
       <Header />
       <DownloadTab />
       <AboutSection />
+      <CardWrapper />
       <Services />
       <Gallery />
       <ContactForm />
