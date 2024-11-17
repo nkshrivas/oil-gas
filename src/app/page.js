@@ -8,6 +8,7 @@ import Gallery from "./components/Gallery";
 import ContactForm from "./components/Contact";
 import Header from "./components/Header";
 import CardWrapper from "./components/CardWrapper";
+import Feedback from "./components/Feedback";
 
 const sliderData = [
   {
@@ -33,12 +34,13 @@ export default function Home() {
   return (
     <div>
       <Slider slides={sliderData} />
-      <Header />
+      <Header title='Home' />
       <DownloadTab />
       <AboutSection />
       <CardWrapper />
       <Services />
       <Gallery />
+      <Feedback />
       <ContactForm />
     </div>
   );

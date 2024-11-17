@@ -4,7 +4,7 @@ import '../../../public/css/card.css';
 const Card = ({ title, meta, date, imageUrl, author, authorTitle, link }) => {
   return (
     <div className="card-container">
-      <div className="card" style={{ backgroundImage: `url(${imageUrl})` }}>
+      <div className="card" >
         <img className="card-img d-none" src={imageUrl} alt={title} />
         <div className="card-overlay">
           <div className="card-body">

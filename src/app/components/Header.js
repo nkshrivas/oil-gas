@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 
-const Header = () => {
+const Header = ({title}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`bg-primary main-header flex items-center justify-between px-4 lg:px-6 xl:px-8 sticky top-14 z-50 
+        className={`moving-gradient main-header flex items-center justify-between px-4 lg:px-6 xl:px-8 sticky top-14 z-50 
           ${isScrolled ? 'h-14' : 'h-20'} border-b-2 border-gray-300 transition-all duration-300 ease-in-out`}
       >
         {/* Hamburger Menu Icon */}
@@ -52,12 +52,12 @@ const Header = () => {
               { title: 'Downloads', path: '/downloads' },
               { title: 'Career', path: '/career' },
               { title: 'Gallery', path: '/gallery' },
-              { title: 'Our project', path: '/our-project' },
+              { title: 'Our Project', path: '/our-projects' },
               { title: 'Advisory', path: '/advisory' },
             ].map((item, index) => (
               <li
                 key={index}
-                className={`p-3 xl:p-4 menu border-l ${item.title === 'Home' ? 'active' : ''} 
+                className={`p-3 xl:p-4 menu border-l ${item.title === title ? 'active' : ''} 
                  ` }
               >
                 <a href={item.path}>

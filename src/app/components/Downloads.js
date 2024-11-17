@@ -11,6 +11,7 @@ const DownloadTab = () => {
 
   const handleTabOpen = (tabCategory) => {
     setOpen(tabCategory);
+    AOS.refresh(); // Refresh AOS to re-evaluate the elements and trigger animations
   };
 
   return (

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
+import Header from '../components/Header';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -26,7 +27,9 @@ const AboutUs = () => {
           </h1>
         </div>
       </div>
-
+      <Header 
+        title="About"
+      />
       {/* Mission Section */}
       <section className="py-16 bg-white text-center">
         <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

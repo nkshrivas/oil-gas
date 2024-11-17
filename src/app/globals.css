@@ -534,3 +534,21 @@ padding: 8px 16px ;
 .hero-content {
   animation: slideInFromTop 0.8s ease-out forwards;
 }
+
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.moving-gradient {
+  background: var(--primary);
+  background-size: 200% 200%; /* Makes the gradient large enough to animate */
+  animation: movingGradient 15s linear infinite; /* Controls the speed (15s for slow movement) */
+}

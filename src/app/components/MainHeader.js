@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
@@ -30,13 +31,19 @@ const MainHeader = () => {
             >
                 {/* Logo Section */}
                 <a href="/" className="flex-shrink-0 flex items-center">
-                    <h2
+                    <Image
+                        alt="Indraprastha Logo"
+                        src="/images/logo.png"
+                        width={70}
+                        height={70}
+                    />
+                    {/* <h2
                         className={`text-3xl font-semibold ${
                             isScrolled ? 'text-black text-xl' : 'text-white text-2xl'
                         }`}
                     >
                         Indraprastha
-                    </h2>
+                    </h2> */}
                 </a>
 
                 {/* Contact Information */}
@@ -66,7 +73,7 @@ const MainHeader = () => {
 
                 {/* Request Callback Button */}
                 <div className="hidden lg:block">
-                    <button className="button">
+                    <button className="button moving-gradient">
                         Request Callback
                     </button>
                 </div>

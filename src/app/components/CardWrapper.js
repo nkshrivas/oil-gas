@@ -7,43 +7,42 @@ const Wrapper = () => {
             title: "Bio Diesel",
             meta: "Renewable Energy",
             date: "October 15, 2020",
-            imageUrl: "https://source.unsplash.com/600x900/?bio-diesel,energy",
+            imageUrl: "/images/coal.jpg",
             link: "https://creativemanner.com"
         },
         {
             title: "CBG (Cannabigerol)",
             meta: "Cannabis Extract",
             date: "October 15, 2020",
-            imageUrl: "https://source.unsplash.com/600x900/?cbg,hemp",
+            imageUrl: "/images/coal.jpg",
             link: "https://creativemanner.com"
         },
         {
             title: "Bio Coal",
             meta: "Eco-Friendly Fuel",
             date: "October 15, 2020",
-            imageUrl: "https://source.unsplash.com/600x900/?bio-coal,energy",
+            imageUrl: "/images/coal.jpg",
             link: "https://creativemanner.com"
         },
         {
             title: "Ethanol",
             meta: "Clean Fuel",
             date: "October 15, 2020",
-            imageUrl: "https://source.unsplash.com/600x900/?ethanol,fuel",
+            imageUrl: "/images/coal.jpg",
             link: "https://creativemanner.com"
         },
         {
             title: "Tyre Oil",
             meta: "Recycled Energy",
             date: "October 15, 2020",
-            imageUrl: "https://source.unsplash.com/600x900/?tyre-oil,recycling",
+            imageUrl: "/images/tyre.jpg",
             link: "https://creativemanner.com"
         },
         {
             title: "Raw Material Supply",
             meta: "Industrial Supply",
             date: "October 15, 2020",
-            imageUrl: "https://source.unsplash.com/600x900/?raw-material,supply",
-
+            imageUrl: "/images/coal.jpg",
             link: "https://creativemanner.com"
         }
     ];
@@ -51,7 +50,7 @@ const Wrapper = () => {
     return (
         <section className="wrapper">
             <h2 className="text-4xl font-bold text-center mb-6 text-black dark:text-black heading">
-                Our Products
+                Our Services
             </h2>
             <div className="card-grid">
                 {cardData.map((card, index) => (
