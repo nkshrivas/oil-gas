@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 
-const Header = ({title}) => {
+const Header = ({ title }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -30,7 +30,7 @@ const Header = ({title}) => {
     <>
       <header
         className={`moving-gradient main-header flex items-center justify-between px-4 lg:px-6 xl:px-8 sticky top-14 z-50 
-          ${isScrolled ? 'h-14' : 'h-20'} border-b-2 border-gray-300 transition-all duration-300 ease-in-out`}
+          ${isScrolled ? 'h-10' : 'h-20'} border-b-2 border-gray-300 transition-all duration-300 ease-in-out`}
       >
         {/* Hamburger Menu Icon */}
         <div className="lg:hidden">
@@ -41,8 +41,8 @@ const Header = ({title}) => {
 
         {/* Navigation Menu */}
         <nav
-          className={`lg:flex lg:justify-center lg:items-center flex-1 ${isMenuOpen ? 'block' : 'hidden'} 
-          absolute lg:static bg-white w-full lg:bg-transparent top-20 left-0 z-50 border-t-2 lg:border-t-0 border-gray-300`}
+          className={`lg:flex lg:justify-center lg:items-center shadow-md flex-1 ${isMenuOpen ? 'block' : 'hidden'} 
+          absolute lg:static bg-white w-full lg:bg-transparent top-12 left-0 z-50 border-t-2 lg:border-t-0 border-gray-300`}
         >
           <ul className={`flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4 lg:mr-8 p-4 lg:p-0 transition-all duration-300 ease-in-out ${isScrolled ? 'text-sm' : 'text-base'}`}>
             {[
@@ -57,7 +57,7 @@ const Header = ({title}) => {
             ].map((item, index) => (
               <li
                 key={index}
-                className={`p-3 xl:p-4 menu border-l ${item.title === title ? 'active' : ''} 
+                className={`px-3 py-2 menu lg:border-l ${item.title === title ? 'active' : ''} 
                  ` }
               >
                 <a href={item.path}>

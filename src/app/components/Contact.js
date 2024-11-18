@@ -1,4 +1,4 @@
-'use client'; 
+'use client';
 import React, { useEffect, useState } from 'react';
 
 const ContactSection = () => {
@@ -36,21 +36,21 @@ const ContactSection = () => {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="contact-section bg-gradient-to-r moving-gradient py-16 container lg:px-8">
+      <div className="contact-section flex-col md:flex-row bg-gradient-to-r moving-gradient py-16 px-8 w-100">
         {/* Content Section */}
         <div className="flex-1 text-white p-8 md:pr-16 z-10">
           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
           <p className="mb-6 mt-5">
             We would love to hear from you! Whether you have a question or need assistance, our team is here to help. Feel free to reach out to us via the contact form, and we will get back to you shortly.</p>
-            <p>Thank you for considering us!
+          <p>Thank you for considering us!
           </p>
           {/* <p className="mb-4"></p> */}
         </div>
 
         {/* Contact Form Section */}
-        <div className="flex-1 bg-white rounded-lg p-8 shadow-lg z-10 relative">
+        <div className="flex-1 bg-white rounded-lg p-8 shadow-lg z-10 relative" style={{ width: "100%!important" }}>
           <h1 className="text-2xl font-bold text-center heading">Contact Us</h1>
-          <form className='contact-form' onSubmit={(e) => { e.preventDefault(); console.log('Form submitted'); }}>
+          <form className='contact-form w-100' onSubmit={(e) => { e.preventDefault(); console.log('Form submitted'); }}>
             <div className="mb-4 mt-5">
               <label className="block text-sm font-semibold mb-2" htmlFor="name">Name</label>
               <input
@@ -82,9 +82,9 @@ const ContactSection = () => {
             </div>
 
             <div className='flex justify-center'>
-            <button type="submit" className="button">
-              Send Message
-            </button>
+              <button type="submit" className="button">
+                Send Message
+              </button>
             </div>
           </form>
         </div>

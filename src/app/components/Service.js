@@ -35,10 +35,10 @@ const servicesData = [
 const Services = () => {
   return (
     <section>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="services mt-12">
-          <div className="flex flex-wrap -mx-2">
-            <div className="w-full sm:w-1/2 lg:w-1/2 px-2">
+      <div className="container py-10 mx-auto px-4 sm:px-6 lg:px-8">
+        <div>
+          <div className="flex flex-col flex-wrap -mx-2">
+            <div className="w-full  px-2">
               <div className="left-service-text">
                 <div className="title flex gap-2 items-center">
                   <MdOutlineWaterDrop /> <h6>WHY CHOOSE US</h6>
@@ -48,14 +48,14 @@ const Services = () => {
                 </h2>
               </div>
             </div>
-            <div className="w-full sm:w-1/2 lg:w-1/2 px-2">
+            <div className="w-full  px-2">
               <div className="right-service-text md:mt-2">
                 <p>There are many variations of passages of Lorem Ipsum available, have suffered in form, by injected humour. If you are going to use a passage of Lorem Ipsum, you need to be sure anything embarrassing hidden in the middle of text.</p>
               </div>
             </div>
           </div>
 
-          <div className="mt-5">
+          <div className="lg:col-span-3  mt-5">
             <div className="flex flex-wrap -mx-2">
               {servicesData.map((service, index) => (
                 <div key={index} className="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">

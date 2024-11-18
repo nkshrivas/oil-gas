@@ -5,8 +5,8 @@
 :root {
   --white: #fff;
   --black: #000;
-  --primary:linear-gradient(148deg, rgba(255,212,82,1) 0%, rgba(41,62,130,1) 100%);
-  --secondary:#30355d;
+  --primary: linear-gradient(148deg, rgba(255, 212, 82, 1) 0%, rgba(41, 62, 130, 1) 100%);
+  --secondary: #30355d;
   --grey: #aab9cd;
   --services-card: #f3f3f4;
   --card-hover: #f0fcf2;
@@ -22,7 +22,7 @@
 body {
   color: var(--black);
   background: var(--white);
-  font-family:system-ui;
+  font-family: system-ui;
   padding: 0;
   margin: 0;
 }
@@ -50,7 +50,7 @@ ul {
   padding: 0 !important;
 }
 
-p{
+p {
   color: var(--black);
 }
 
@@ -58,7 +58,7 @@ p{
   margin-top: 120px;
 }
 
-.px-15{
+.px-15 {
   padding: 0 150px;
 }
 
@@ -66,14 +66,15 @@ p{
   color: var(--primary);
 }
 
-.bg-primary{
+.bg-primary {
   background: var(--primary);
 }
 
-.color-grey{
+.color-grey {
   color: var(--grey);
 }
-.color-secondary{
+
+.color-secondary {
   color: var(--secondary);
 }
 
@@ -81,18 +82,25 @@ p{
   cursor: pointer;
 }
 
-.main-header ul li a{
+.main-header ul li a {
   font-size: 16px;
   transition: 0.3s;
 }
 
-.main-header ul li a:hover{
+.main-header ul li a:hover {
   color: var(--primary);
 }
 
-.active{
-  color: var(--white);
+.active {
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6f61, #6b5b95, #88b04b, #f7cac9, #92a8d1);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: movingGradient 15s linear infinite;
 }
+
 /* 
 .menu ul li a {
   color: var(--black);
@@ -168,9 +176,9 @@ p{
 }  */
 
 .main-header {
- display: flex;
- align-items: center;
- justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .banner {
@@ -179,7 +187,9 @@ p{
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-flex {
@@ -197,13 +207,13 @@ p{
   padding: 30px;
 }
 
-.hero-content h2{
+.hero-content h2 {
   font-size: 35px;
   margin-top: 2px !important;
   font-weight: 700;
 }
 
-.hero-content p{
+.hero-content p {
   font-size: 16px;
   margin-top: 2px !important;
   margin-bottom: 20px;
@@ -291,12 +301,12 @@ p{
 }
 
 /* about */
-.about-img img{
+.about-img img {
   position: relative;
   z-index: 1;
 }
 
-.about-box{
+.about-box {
   background: var(--primary);
   padding: 30px;
 }
@@ -312,23 +322,25 @@ p{
   padding: 30px;
 }
 
-.about-main-box h2{
+.about-main-box h2 {
   font-weight: 600;
-  
+
 }
 
-.contact-section{
+.contact-section {
   display: flex;
   align-items: center;
 }
+
 /* footer */
 
-.footer{
+.footer {
   background: var(--card-hover);
   padding-block: 30px;
   position: relative;
   overflow: hidden;
 }
+
 .footer-col ul li a {
   font-size: 16px;
   font-weight: 500;
@@ -337,17 +349,17 @@ p{
   transition: 0.3s;
 }
 
-.footer-col{
-z-index: 1;
-position: relative;
+.footer-col {
+  z-index: 1;
+  position: relative;
 }
 
-.ms-30{
+.ms-30 {
   margin-left: 90px;
 }
 
-.footer-col h5{
-font-size: 20px;
+.footer-col h5 {
+  font-size: 20px;
 }
 
 .footer-col ul li {
@@ -364,12 +376,12 @@ font-size: 20px;
   margin-right: 10px;
 }
 
-.footer-contact{
+.footer-contact {
   z-index: 1;
   position: relative;
 }
 
-.footer-contact h5{
+.footer-contact h5 {
   font-size: 20px;
 }
 
@@ -408,50 +420,65 @@ font-size: 20px;
   margin-left: 40px;
 }
 
-.about-right h2{
+.about-right h2 {
   font-size: 35px;
-    line-height: 40px;
-    margin-block: 15px !important;
+  line-height: 40px;
+  margin-block: 15px !important;
 }
 
-.max-width-520{
+.max-width-520 {
   max-width: 520px;
-    margin: auto;
-    margin-block: 10px;
+  margin: auto;
+  margin-block: 10px;
 }
-.max-width-900{
+
+.max-width-900 {
   max-width: 900px;
   margin: auto;
   margin-block: 10px;
 }
-.lg\:w-8{
+
+.lg\:w-8 {
   width: 1rem !important;
   /* padding: 10px !important; */
 }
 
-.lg\:px-8 {
-padding-left: 7rem !important;
-padding-right: 7rem !important;
-}
-.menu{
+
+.menu {
   margin: 0 !important;
 }
 
-.menu a{
+.menu a {
   font-weight: 600;
 }
 
-.menu:last-child{
-  border-right: 1px solid #ccc;
+.contact-form input {
+  padding: 8px 16px;
 }
 
-.contact-form input{
-padding: 8px 16px ;
+.contact-form textarea {
+  padding: 8px 16px;
 }
 
-.contact-form textarea{
-  padding: 8px 16px ;
+@media (min-width:992px) {
+  .lg\:px-8 {
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
   }
+
+  .menu:last-child {
+    border-right: 1px solid #ccc;
+  }
+
+}
+
+@media (min-width:320px) and (max-width: 576px) {
+  .sm-pt {
+    padding-top: 60px;
+  }
+
+}
+
 @media (max-width:992px) {
   /* .menu {
       position: absolute;
@@ -487,46 +514,81 @@ padding: 8px 16px ;
   } */
 
   .about-right {
-      margin-left:  10px ;
-      margin-top: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
   }
 }
 
 @media (max-width:756px) {
   .md-mt-2 {
-      margin-top: 20px;
+    margin-top: 20px;
   }
+
 }
+
+@media (max-width:756px) {
+  .md-mt-2 {
+    margin-top: 20px;
+  }
+
+}
+
+@media (min-width:756px) {
+  .md\:px-8 {
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+  }
+
+}
+
 .container {
-  padding-left: 3rem; /* Smaller padding for mobile */
-  padding-right: 3rem; /* Smaller padding for mobile */
+  padding-left: 3rem;
+  /* Smaller padding for mobile */
+  padding-right: 3rem;
+  /* Smaller padding for mobile */
 }
 
 .services-card {
-  padding: 1rem; /* Adjust card padding */
+  padding: 1rem;
+  /* Adjust card padding */
 }
 
 @media (min-width: 640px) {
   .container {
-    padding-left: 1.5rem; /* Medium padding for small screens */
-    padding-right: 1.5rem; /* Medium padding for small screens */
+    padding-left: 1.5rem;
+    /* Medium padding for small screens */
+    padding-right: 1.5rem;
+    /* Medium padding for small screens */
   }
 }
 
 @media (min-width: 768px) {
   .services-card {
-    padding: 1.5rem; /* More padding for larger screens */
+    padding: 1.5rem;
+    /* More padding for larger screens */
   }
 }
+
+@media (min-width: 1022px) {
+  .active {
+    color: var(--white);
+  }
+}
+
 /* Add this to your global or module CSS file */
 @keyframes slideInFromTop {
   0% {
-    transform: translateY(-50px);  /* Start off-screen above */
-    opacity: 0;  /* Fully transparent */
+    transform: translateY(-50px);
+    /* Start off-screen above */
+    opacity: 0;
+    /* Fully transparent */
   }
+
   100% {
-    transform: translateY(0);  /* End at normal position */
-    opacity: 1;  /* Fully visible */
+    transform: translateY(0);
+    /* End at normal position */
+    opacity: 1;
+    /* Fully visible */
   }
 }
 
@@ -539,9 +601,11 @@ padding: 8px 16px ;
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -549,6 +613,8 @@ padding: 8px 16px ;
 
 .moving-gradient {
   background: var(--primary);
-  background-size: 200% 200%; /* Makes the gradient large enough to animate */
-  animation: movingGradient 15s linear infinite; /* Controls the speed (15s for slow movement) */
+  background-size: 200% 200%;
+  /* Makes the gradient large enough to animate */
+  animation: movingGradient 15s linear infinite;
+  /* Controls the speed (15s for slow movement) */
 }

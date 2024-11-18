@@ -28,8 +28,8 @@ const Slider = ({ slides }) => {
             background: slide.video ? `url(${slide.video})` : `url(${slide.image})`,
           }}
         >
-          <div className="banner">
-            <div className="container px-15 lg:px-8">
+          <div className="banner md:pt-0">
+            <div className="container sm-pt px-15 lg:px-8">
               <div className="hero-content border-rounded">
                 <div className="title flex gap-2 items-center">
                   <MdOutlineWaterDrop />

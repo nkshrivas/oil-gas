@@ -16,7 +16,7 @@ const DownloadTab = () => {
 
   return (
     <>
-      <section className="py-20 bg-gray-100 dark:bg-dark lg:py-[120px]">
+      <section className="py-10 bg-gray-100 dark:bg-dark lg:py-[70px]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-6 text-black dark:text-black heading">
             Download Our Booklets
@@ -32,11 +32,10 @@ const DownloadTab = () => {
                     <a
                       key={type}
                       onClick={() => handleTabOpen(type)}
-                      className={`cursor-pointer flex-1 rounded-t px-6 py-4 text-sm font-medium md:text-base transition-all duration-300 ease-in-out transform text-center ${
-                        open === type
-                          ? "bg-gradient-to-r bg-primary text-white shadow-lg scale-10"
-                          : "text-body-color hover:bg-gradient-to-r from-green-500 to-teal-500 hover:text-white"
-                      }`}
+                      className={`cursor-pointer flex-1 rounded-t px-6 py-4 text-sm font-medium md:text-base transition-all duration-300 ease-in-out transform text-center ${open === type
+                        ? "bg-gradient-to-r bg-primary text-white shadow-lg scale-10"
+                        : "text-body-color hover:bg-gradient-to-r from-green-500 to-teal-500 hover:text-white"
+                        }`}
                     >
                       {type}
                     </a>
@@ -80,20 +79,19 @@ const DownloadTabContent = ({ open, tabCategory, details, link }) => {
   return (
     <div>
       <div
-        className={`shadow-md p-6 text-base bg-white rounded-b leading-relaxed text-body-color dark:text-dark-6 transition-all duration-500 ${
-          open === tabCategory ? "block" : "hidden"
-        }`}
+        className={`shadow-md p-6 text-base bg-white rounded-b leading-relaxed text-body-color dark:text-dark-6 transition-all duration-500 ${open === tabCategory ? "block" : "hidden"
+          }`}
         data-aos="fade-up" // AOS animation for the content
       >
         <p className="mb-4">{details}</p>
         <div className="flex justify-center">
-        <a
-          href={link}
-          className="mt-4 inline-block button bg-gradient-to-r from-green-500 to-teal-500 text-white px-6 py-2 text-center shadow-md transition duration-300 hover:shadow-lg hover:opacity-90"
-          download
-        >
-          Download Booklet
-        </a>
+          <a
+            href={link}
+            className="mt-4 inline-block button bg-gradient-to-r from-green-500 to-teal-500 text-white px-6 py-2 text-center shadow-md transition duration-300 hover:shadow-lg hover:opacity-90"
+            download
+          >
+            Download Booklet
+          </a>
         </div>
       </div>
     </div>
