@@ -104,14 +104,14 @@ const AboutSection = () => {
         //         </div>
         //     </div>
         // </section>
-        <div>
-            <section className="mt-12 lg:px-8">
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-                    <div>
+        <div >
+            <section className='container mx-auto px-4 sm:px-6 lg:px-8 py-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+                    <div className='lg:col-span-1'>
                         <h1 className='heading'>About us</h1>
-                        <button className='button mt-10'>More Information</button>
+                        <button className='button mt-5 lg:mt-10'>More Information</button>
                     </div>
-                    <div>
+                    <div className='lg:col-span-2'>
                         <h6 className='color-secondary font-bold text-sm'>
                             We help interesting companies create and improve industry products and services through long lasting and mutually rewarding relationships.
                         </h6>
@@ -119,7 +119,7 @@ const AboutSection = () => {
                             We work with our partners to streamline project plans that don’t just deliver on product perfection, but also delivers on time – crucial to success in a highly competitive market where every day counts.
                         </p>
                     </div>
-                    <div>
+                    <div className='lg:col-span-1'>
                         <h5 className='font-bold text-lg color-secondary'>Sheldon Moreno</h5>
                         <h6 className='font-bold text-xs mt-3'>HEAD OF OPERATIONS</h6>
 

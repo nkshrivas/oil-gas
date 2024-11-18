@@ -48,8 +48,8 @@ const Wrapper = () => {
     ];
 
     return (
-        <section className="wrapper">
-            <h2 className="text-4xl font-bold text-center mb-6 text-black dark:text-black heading">
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <h2 className="text-4xl font-bold text-center pb-10 text-black dark:text-black heading">
                 Our Services
             </h2>
             <div className="card-grid">
