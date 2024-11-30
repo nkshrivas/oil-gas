@@ -33,8 +33,8 @@ const DownloadTab = () => {
                       key={type}
                       onClick={() => handleTabOpen(type)}
                       className={`cursor-pointer flex-1 rounded-t px-6 py-4 text-sm font-medium md:text-base transition-all duration-300 ease-in-out transform text-center ${open === type
-                        ? "bg-gradient-to-r bg-primary text-white shadow-lg scale-10"
-                        : "text-body-color hover:bg-gradient-to-r from-green-500 to-teal-500 hover:text-white"
+                        ? "moving-gradient text-white shadow-lg scale-10"
+                        : "text-body-color  hover: hover:text-yellow-600"
                         }`}
                     >
                       {type}

@@ -1,16 +1,15 @@
 'use client'; 
 import React, { useState } from 'react';
-import Image from 'next/image';
 
 const Gallery = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const images = [
-    '/images/IMG_1.JPG',
-    '/images/IMG_2.JPG',
-    '/images/IMG_3.JPG',
-    '/images/IMG_4.JPG',
-    '/images/IMG_5.JPG',
-    '/images/IMG_6.JPG',
+    '/images/gallery1.jpg',
+    '/images/gallery2.jpg',
+    '/images/gallery3.jpg',
+    '/images/gallery4.jpg',
+    '/images/gallery5.jpg',
+    '/images/gallery6.jpg',
   ];
 
   const handleThumbnailClick = (index) => {
@@ -24,11 +23,10 @@ const Gallery = () => {
         
         {/* Main Image Display */}
         <div className="relative mb-8 w-full h-96 rounded mt-6">
-          <Image
+          <img
             src={images[selectedImageIndex]}
             alt={`Gallery image ${selectedImageIndex + 1}`}
-            layout="fill"
-            className="rounded-lg object-cover"
+            className="rounded-lg object-cover w-full h-full" // Use w-full and h-full for proper sizing
           />
         </div>
 
@@ -41,10 +39,9 @@ const Gallery = () => {
               onClick={() => handleThumbnailClick(index)}
             >
               <div className="w-24 h-24 overflow-hidden rounded-lg"> {/* Fixed size with overflow hidden */}
-                <Image
+                <img
                   src={image}
                   alt={`Thumbnail ${index + 1}`}
-                  layout="fill" // Use fill to maintain aspect ratio
                   className={`object-cover transition-transform duration-200 ${selectedImageIndex === index ? 'scale-110 border-2 border-blue-500' : ''}`} // Highlight selected thumbnail
                 />
               </div>

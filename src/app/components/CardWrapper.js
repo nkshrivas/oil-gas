@@ -7,43 +7,43 @@ const Wrapper = () => {
             title: "Bio Diesel",
             meta: "Renewable Energy",
             date: "October 15, 2020",
-            imageUrl: "/images/coal.jpg",
-            link: "https://creativemanner.com"
+            imageUrl: "/images/biodiesel.jpg",
+            link: "/services/biodiesel"
         },
         {
-            title: "CBG (Cannabigerol)",
-            meta: "Cannabis Extract",
+            title: "CBG (Compressed Bio Gas)",
+            meta: "Renewable Energy",
             date: "October 15, 2020",
-            imageUrl: "/images/coal.jpg",
-            link: "https://creativemanner.com"
+            imageUrl: "/images/biodiesel.JPG",
+            link: "/services/cbg"
         },
         {
             title: "Bio Coal",
             meta: "Eco-Friendly Fuel",
             date: "October 15, 2020",
             imageUrl: "/images/coal.jpg",
-            link: "https://creativemanner.com"
+            link: "/services/biocoal"
         },
         {
             title: "Ethanol",
             meta: "Clean Fuel",
             date: "October 15, 2020",
-            imageUrl: "/images/coal.jpg",
-            link: "https://creativemanner.com"
+            imageUrl: "/images/rawm.JPG",
+            link: "/services/ethanol"
         },
         {
             title: "Tyre Oil",
             meta: "Recycled Energy",
             date: "October 15, 2020",
-            imageUrl: "/images/tyre.jpg",
-            link: "https://creativemanner.com"
+            imageUrl: "/images/biodiesel.JPG",
+            link: "/services/tyre-oil"
         },
         {
             title: "Raw Material Supply",
             meta: "Industrial Supply",
             date: "October 15, 2020",
-            imageUrl: "/images/coal.jpg",
-            link: "https://creativemanner.com"
+            imageUrl: "/images/IMG_3137.JPG",
+            link: "/services/"
         }
     ];
 
@@ -52,7 +52,7 @@ const Wrapper = () => {
             <h2 className="text-4xl font-bold text-center pb-10 text-black dark:text-black heading">
                 Our Services
             </h2>
-            <div className="card-grid">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {cardData.map((card, index) => (
                     <Card
                         key={index}

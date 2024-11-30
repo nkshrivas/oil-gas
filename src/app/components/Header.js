@@ -1,10 +1,12 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
+import ContactModal from './ContactModal';
 
 const Header = ({ title }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isModalOpen, setIsModelOpen] = useState(false)
 
   // Detect if the page is scrolled
   useEffect(() => {
@@ -25,18 +27,33 @@ const Header = ({ title }) => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  const toggleModal = () => {
+    setIsModelOpen(!isModalOpen)
+  }
   return (
     <>
       <header
-        className={`moving-gradient main-header flex items-center justify-between px-4 lg:px-6 xl:px-8 sticky top-14 z-50 
-          ${isScrolled ? 'h-10' : 'h-20'} border-b-2 border-gray-300 transition-all duration-300 ease-in-out`}
+        className={` moving-gradient  main-header flex items-center justify-between px-4 lg:px-6 xl:px-8 sticky top-14 z-30 
+          ${isScrolled ? 'h-15' : 'h-20'} border-b-2 border-gray-300 transition-all duration-300 ease-in-out`}
       >
         {/* Hamburger Menu Icon */}
-        <div className="lg:hidden">
+        <div className="lg:hidden flex justify-between w-full">
           <button onClick={toggleMenu} className="focus:outline-none">
             {isMenuOpen ? <HiX className="h-6 w-6" /> : <HiMenu className="h-6 w-6" />}
           </button>
+          <button
+          onClick={toggleModal}
+          className={`
+            moving-gradient 
+            ${isScrolled ? 'text-sm py-2 px-4' : 'text-lg py-3 px-6'} 
+            border rounded-3xl 
+            transition-all duration-300 ease-in-out 
+            hover:bg-orange-600 hover:text-white
+            focus:outline-none
+          `}
+        >
+          Request Callback
+        </button>
         </div>
 
         {/* Navigation Menu */}
@@ -50,9 +67,9 @@ const Header = ({ title }) => {
               { title: 'About', path: '/about-us' },
               { title: 'Services', path: '/services' },
               { title: 'Downloads', path: '/downloads' },
-              { title: 'Career', path: '/career' },
+              { title: 'Careers', path: '/career' },
               { title: 'Gallery', path: '/gallery' },
-              { title: 'Our Project', path: '/our-projects' },
+              { title: 'Our Projects', path: '/our-projects' },
               { title: 'Advisory', path: '/advisory' },
             ].map((item, index) => (
               <li
@@ -70,6 +87,7 @@ const Header = ({ title }) => {
           </ul>
         </nav>
       </header>
+      <ContactModal isOpen={isModalOpen} onClose={toggleModal} />
     </>
   );
 };

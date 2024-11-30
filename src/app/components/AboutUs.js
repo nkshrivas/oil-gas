@@ -1,8 +1,5 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import img from '@/app/images/about.png';
-import { MdOutlineWaterDrop } from 'react-icons/md';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

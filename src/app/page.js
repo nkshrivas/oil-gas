@@ -1,6 +1,5 @@
 import Slider from "@/app/components/Slider";
 // import slider1 from '@/app/images/slider1.mp4';
-import slider2 from '@/app/images/banner-slide-2.png';
 import AboutSection from "./components/AboutUs";
 import Services from "./components/Service";
 import DownloadTab from "./components/Downloads";
@@ -12,19 +11,20 @@ import Feedback from "./components/Feedback";
 
 const sliderData = [
   {
-    video: '/videos/slider1.mp4',
+    video: '/images/video1.mp4',
     title: "OIL AND GAS",
     subtitle: "We are a Certified and Insured Company.",
     description: "Specifically designed for any types of Small Factory, Company, Electronic Business, Power, Petroleum, Gas, Plants construction etc.",
-    buttonText: "READ MORE"
+    buttonText: "READ MORE",
+    buttonLink: "/services"
   },
-  {
-    image: slider2,
-    title: "ANOTHER SERVICE",
-    subtitle: "Your Trusted Partner.",
-    description: "Providing top-notch solutions for your business needs.",
-    buttonText: "LEARN MORE"
-  },
+  // {
+  //   video: '/images/video1.mp4',
+  //   title: "ANOTHER SERVICE",
+  //   subtitle: "Your Trusted Partner.",
+  //   description: "Providing top-notch solutions for your business needs.",
+  //   buttonText: "LEARN MORE"
+  // },
   // Add more slides as needed
 ];
 

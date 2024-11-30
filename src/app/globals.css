@@ -5,11 +5,12 @@
 :root {
   --white: #fff;
   --black: #000;
-  --primary: linear-gradient(148deg, rgba(255, 212, 82, 1) 0%, rgba(41, 62, 130, 1) 100%);
+  --primary: linear-gradient(148deg, rgba(255, 225, 82, 1) 0%, rgba(41, 62, 130, 1) 100%);
   --secondary: #30355d;
   --grey: #aab9cd;
   --services-card: #f3f3f4;
   --card-hover: #f0fcf2;
+  --text-primary: #30355d;
 }
 
 @media (prefers-color-scheme: light) {
@@ -182,7 +183,6 @@ p {
 }
 
 .banner {
-  background-image: url(/images/banner-slide.png);
   height: 650px;
   width: 100%;
   background-size: cover;
@@ -202,7 +202,7 @@ p {
   position: relative;
   z-index: 1;
   color: var(--white);
-  background: #7a79797d;
+  background: #0505057d;
   max-width: 550px;
   padding: 30px;
 }
@@ -615,6 +615,12 @@ p {
   background: var(--primary);
   background-size: 200% 200%;
   /* Makes the gradient large enough to animate */
-  animation: movingGradient 15s linear infinite;
+  animation: movingGradient 10s linear infinite;
   /* Controls the speed (15s for slow movement) */
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

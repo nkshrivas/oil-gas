@@ -5,7 +5,7 @@ const Card = ({ title, meta, date, imageUrl, author, authorTitle, link }) => {
   return (
     <div className="card-container">
       <div className="card" >
-        <img className="card-img d-none" src={imageUrl} alt={title} />
+        <img className="card-img" src={imageUrl} alt={title} />
         <div className="card-overlay">
           <div className="card-body">
             <small className="card-meta">{meta}</small>

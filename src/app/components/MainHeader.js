@@ -1,11 +1,19 @@
 'use client';
-import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import ContactModal from './ContactModal';
 
 const MainHeader = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
     // Detect if the page is scrolled
     useEffect(() => {
         const handleScroll = () => {
@@ -25,12 +33,12 @@ const MainHeader = () => {
     return (
         <>
             <header
-                className={`main-header flex items-center justify-between px-6 md:px-8 lg:px-8 xl:px-10 top-0 z-50 fixed w-full transition-all duration-300 ease-in-out ${isScrolled ? 'bg-white h-14' : 'h-20 bg-transparent'
+                className={`main-header flex items-center justify-between px-6  md:px-8 lg:px-8 xl:px-10 top-0 z-30 fixed w-full transition-all duration-300 ease-in-out ${isScrolled ? 'bg-white h-14' : 'h-20 bg-transparent'
                     }`}
             >
                 {/* Logo Section */}
                 <a href="/" className="flex-shrink-0 flex items-center">
-                    <Image
+                    <img
                         alt="Indraprastha Logo"
                         src="/images/logo.png"
                         width={60}
@@ -55,27 +63,27 @@ const MainHeader = () => {
                         <FaPhoneAlt className="h-7 w-7 lg:h-8 lg:w-8 text-primary" />
                         <div>
                             <p className={`hidden md:block ${isScrolled ? 'text-sm' : 'text-white text-sm'} `}>Have a question? Call us now</p>
-                            <p className={`${isScrolled ? 'text-sm' : 'text-white text-sm'} `}>(123) 456-7890</p>
+                            <p className={`${isScrolled ? 'lg:text-sm text-xs' : 'text-white lg:text-sm text-xs'} `}>+91 73101 04441</p>
                         </div>
                     </div>
 
                     {/* Address Icon and Address */}
                     <div className="flex items-center space-x-3">
-                        <FaMapMarkerAlt className="h-7 w-7 lg:h-8 lg:w-8 text-primary" />
+                        <FaMapMarkerAlt className="h-7 w-7  lg:h-8 lg:w-8 text-primary" />
                         <div>
-                            <p className={`hidden md:block ${isScrolled ? 'text-sm' : 'text-white text-sm'} `}>Visit our location</p>
-                            <p className={`${isScrolled ? 'text-sm' : 'text-white text-sm'} `}>123 Main St, City, Country</p>
+                            <p className={`${isScrolled ? ' lg:text-sm text-xs' : 'text-white lg:text-sm text-xs'} `}>DLF MYPAD, Vibhuti Khand, <br/>Gomti Nagar, Lucknow, Uttar Pradesh 226010</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Request Callback Button */}
                 <div className="hidden lg:block">
-                    <button className="button moving-gradient">
+                    <button onClick={openModal} className="button  moving-gradient ">
                         Request Callback
                     </button>
                 </div>
             </header>
+            <ContactModal isOpen={isModalOpen} onClose={closeModal} />
         </>
     );
 };

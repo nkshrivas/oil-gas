@@ -13,24 +13,23 @@ const Footer = () => {
           <div className="flex flex-wrap -mx-2">
             <div className="w-full sm:w-1/2 lg:w-1/4 px-2">
               <div className="footer-col">
-                <div className="logo mb-3">
-                  <img src={logoImg.src} alt="footer-img" width="100" />
-                </div>
-                <p>
-                  There are many variations of passages of Lorem Ipsum available, have suffered in form, by
-                  injected humour. If you are going to use a passage of Lorem Ipsum, you need to be sure anything
-                  embarrassing hidden in the middle of text.
-                </p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.190208887449!2d81.00377637456535!3d26.865697262111055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be331f5fb853b%3A0x8b178fe6d88456ca!2sINDRAPRASTH%20OIL!5e0!3m2!1sen!2sin!4v1732974752290!5m2!1sen!2sin"
+                  width="100%"
+                  height="260"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                ></iframe>
               </div>
             </div>
             <div className="w-full sm:w-1/2 lg:w-1/4 px-2">
               <div className="footer-col">
                 <h5><b>Company</b></h5>
                 <ul>
-                  <li><a href="#"><b>Home</b></a></li>
-                  <li><a href="#"><b>About</b></a></li>
-                  <li><a href="#"><b>Products</b></a></li>
-                  <li><a href="#"><b>Contact</b></a></li>
+                  <li><a href="/"><b>Home</b></a></li>
+                  <li><a href="/about-us"><b>About</b></a></li>
+                  <li><a href="/services"><b>Services</b></a></li>
+                  <li><a href="/gallery"><b>Gallery</b></a></li>
                 </ul>
               </div>
             </div>
@@ -65,9 +64,9 @@ const Footer = () => {
               <div className="footer-contact">
                 <h5><b>Contacts</b></h5>
                 <ul>
-                  <li className='flex'><FaPhoneAlt /><a href="#"><b>8 (800) 695-2686</b></a></li>
-                  <li className='flex'><FaEnvelope /><a href="#"><b>oktan@support.com</b></a></li>
-                  <li className='flex'><FaMapMarker /><a href="#"><b>Baker st. 567, San Diego, CA</b></a></li>
+                  <li className='flex'><FaPhoneAlt /><a href="tel:+91 73101 04441"><b>+91 73101 04441</b></a></li>
+                  <li className='flex'><FaEnvelope /><a href="mailto:Connect@indraprasthoil.com"><b>Connect@indraprasthoil.com</b></a></li>
+                  <li className='flex'><FaMapMarker /><a href="https://maps.app.goo.gl/S1nUTaAvFDNtHzBv6"><b>DLF MYPAD, Vijaipur Colony, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010</b></a></li>
                 </ul>
               </div>
             </div>

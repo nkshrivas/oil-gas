@@ -36,7 +36,7 @@ const ContactSection = () => {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="contact-section flex-col md:flex-row bg-gradient-to-r moving-gradient py-16 px-8 w-100">
+      <div className="contact-section flex-col md:flex-row bg-gradient-to-r  moving-gradient  py-16 px-8 w-100">
         {/* Content Section */}
         <div className="flex-1 text-white p-8 md:pr-16 z-10">
           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>

@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -14,12 +13,11 @@ const AboutUs = () => {
     <div className="about-us-page">
       {/* Banner Section */}
       <div className="relative w-full h-96" data-aos="fade-up">
-        <Image
-          src="/images/banner-slide.png"
-          alt="Indraprasth Oil Banner"
-          layout="fill"
-          objectFit="cover"
-          className="banner-image"
+        <video
+          src="/images/video2.mp4"
+          alt="About Banner"
+          autoPlay
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <h1 className="text-4xl md:text-6xl text-white font-bold">
@@ -51,7 +49,7 @@ const AboutUs = () => {
 
           {/* Image */}
           <div data-aos="fade-left">
-            <Image
+            <img
               src="/images/IMG_3.JPG"
               alt="Our Mission"
               width={800}
@@ -67,7 +65,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Image */}
           <div data-aos="fade-right">
-            <Image
+            <img
               src="/images/IMG_4.JPG"
               alt="Our Vision"
               width={800}
@@ -146,7 +144,7 @@ const AboutUs = () => {
           <p className="text-lg mb-8 max-width-520">
             Contact us today to explore our wide range of sustainable energy solutions and take advantage of government subsidies for biofuel plant installations.
           </p>
-          <button className="bg-white text-green-600 font-bold py-3 px-6 rounded-full hover:bg-gray-100">
+          <button className="bg-white moving-gradient font-bold py-3 px-6 rounded-full hover:bg-gray-100">
             Get In Touch
           </button>
         </div>

@@ -5,6 +5,7 @@ import 'swiper/css/pagination'; // Import pagination styles
 import { Pagination, Autoplay } from 'swiper/modules'; // Import Swiper modules
 import { FaDropbox, FaWater } from 'react-icons/fa';
 import { MdOutlineWaterDrop } from 'react-icons/md';
+import Link from 'next/link';
 
 const Slider = ({ slides }) => {
   return (
@@ -17,31 +18,52 @@ const Slider = ({ slides }) => {
     >
       {slides.map((slide, index) => (
         // Check if the slide has a video
-        <SwiperSlide
-          key={index}
-          style={{
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            direction: 'vertical',
-            effect: 'slide',
-            background: slide.video ? `url(${slide.video})` : `url(${slide.image})`,
-          }}
-        >
-          <div className="banner md:pt-0">
-            <div className="container sm-pt px-15 lg:px-8">
-              <div className="hero-content border-rounded">
-                <div className="title flex gap-2 items-center">
-                  <MdOutlineWaterDrop />
-                  <h6>{slide.title}</h6>
-                </div>
-                <h2>{slide.subtitle}</h2>
-                <p>{slide.description}</p>
-                <button className="button">{slide.buttonText}</button>
+        <SwiperSlide key={index} style={{ position: 'relative' }}>
+        {slide.video ? (
+          <video
+            src={slide.video}
+            autoPlay
+            loop
+            muted
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              zIndex: -1, // Ensure the video stays in the background
+            }}
+          />
+        ) : (
+          <div
+            style={{
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              backgroundImage: `url(${slide.image})`,
+              height: '100%',
+              width: '100%',
+            }}
+          />
+        )}
+        
+        <div className="banner md:pt-0">
+          <div className="container sm-pt px-15 lg:px-8">
+            <div className="hero-content border-rounded">
+              <div className="title flex gap-2 items-center">
+                <MdOutlineWaterDrop />
+                <h6>{slide.title}</h6>
               </div>
+              <h2>{slide.subtitle}</h2>
+              <p>{slide.description}</p>
+              <button className="button"><Link href={slide.buttonLink}>
+              {slide.buttonText}</Link></button>
             </div>
           </div>
-        </SwiperSlide>
+        </div>
+      </SwiperSlide>
+      
       ))}
     </Swiper>
   );
