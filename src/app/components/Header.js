@@ -37,23 +37,23 @@ const Header = ({ title }) => {
           ${isScrolled ? 'h-15' : 'h-20'} border-b-2 border-gray-300 transition-all duration-300 ease-in-out`}
       >
         {/* Hamburger Menu Icon */}
-        <div className="lg:hidden flex justify-between w-full">
+        <div className="lg:hidden p-2 flex justify-between w-full">
           <button onClick={toggleMenu} className="focus:outline-none">
             {isMenuOpen ? <HiX className="h-6 w-6" /> : <HiMenu className="h-6 w-6" />}
           </button>
           <button
-          onClick={toggleModal}
-          className={`
-            moving-gradient 
-            ${isScrolled ? 'text-sm py-2 px-4' : 'text-lg py-3 px-6'} 
-            border rounded-3xl 
-            transition-all duration-300 ease-in-out 
-            hover:bg-orange-600 hover:text-white
-            focus:outline-none
-          `}
-        >
-          Request Callback
-        </button>
+            onClick={toggleModal}
+            className={`
+              moving-gradient 
+              ${isScrolled ? 'text-sm py-2 space-y-2 px-4' : 'text-sm  py-3 px-6'} 
+              border rounded-3xl 
+              transition-all duration-300 ease-in-out 
+              hover:bg-orange-600 hover:text-white
+              focus:outline-none ml-2  // Added margin-left for better spacing
+            `}
+          >
+            Request Callback
+          </button>
         </div>
 
         {/* Navigation Menu */}

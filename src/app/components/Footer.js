@@ -11,7 +11,7 @@ const Footer = () => {
         <img src={footerBg.src} className="footer-bg" alt="footer-bg" />
         <div className="container mx-auto px-4 sm:px-15">
           <div className="flex flex-wrap -mx-2">
-            <div className="w-full sm:w-1/2 lg:w-1/4 px-2">
+            {/* <div className="w-full sm:w-1/2 lg:w-1/4 px-2">
               <div className="footer-col">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.190208887449!2d81.00377637456535!3d26.865697262111055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be331f5fb853b%3A0x8b178fe6d88456ca!2sINDRAPRASTH%20OIL!5e0!3m2!1sen!2sin!4v1732974752290!5m2!1sen!2sin"
@@ -21,8 +21,8 @@ const Footer = () => {
                   loading="lazy"
                 ></iframe>
               </div>
-            </div>
-            <div className="w-full sm:w-1/2 lg:w-1/4 px-2">
+            </div> */}
+            <div className="w-full sm:w-1/2 lg:w-1/3 px-2">
               <div className="footer-col">
                 <h5><b>Company</b></h5>
                 <ul>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-full sm:w-1/2 lg:w-1/4 px-2">
+            <div className="w-full sm:w-1/2 lg:w-1/3 px-2">
               <div className="footer-col">
                 <h5><b>Latest Posts</b></h5>
                 <div className="latest-post">
@@ -60,7 +60,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-1/2 lg:w-1/4 px-2">
+            <div className="w-full sm:w-1/2 lg:w-1/3 px-2">
               <div className="footer-contact">
                 <h5><b>Contacts</b></h5>
                 <ul>

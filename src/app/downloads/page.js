@@ -12,36 +12,26 @@ const Downloads = () => {
   // Sample downloadable items (can be changed based on your actual files)
   const downloadItems = [
     {
-      title: 'Company Brochure',
-      description: 'Download our company brochure to learn more about our mission, services, and solutions.',
-      file: '/downloads/company-brochure.pdf',
-      img: '/images/gallery1.jpg', // Replace with your actual image
+      title: 'Bio CNG',
+      description: 'Download our Biocng document to learn more about our solutions and innovations.',
+      file: '/downloads/biocng.pdf',
+      img: '/images/gallery1.jpg',
     },
     {
-      title: 'Annual Report 2023',
-      description: 'Read our latest annual report for insights on our achievements and sustainability efforts.',
-      file: '/downloads/annual-report-2023.pdf',
-      img: '/images/gallery2.jpg', // Replace with your actual image
+      title: 'Bio Coal',
+      description: 'Download our Biocoal document to learn more about our solutions and innovations.',
+      file: '/downloads/biocoal.pdf',
+      img: '/images/gallery2.jpg',
     },
     {
-      title: 'Sustainability Whitepaper',
-      description: 'Download our whitepaper on sustainable energy and the future of renewable solutions.',
-      file: '/downloads/sustainability-whitepaper.pdf',
-      img: '/images/gallery3.jpg', // Replace with your actual image
+      title: 'Bio Diesel',
+      description: 'Download our Biodiesel document to learn more about our solutions and innovations.',
+      file: '/downloads/biodiesel.pdf',
+      img: '/images/gallery3.jpg',
     },
-    {
-      title: 'Green Energy Solutions Presentation',
-      description: 'Download our presentation to learn more about green energy alternatives and technologies.',
-      file: '/downloads/green-energy-presentation.pdf',
-      img: '/images/gallery4.jpg', // Replace with your actual image
-    },
-    {
-      title: 'Bio Oil Solutions',
-      description: 'Download our presentation to learn more about Bio oil alternatives and technologies.',
-      file: '/downloads/green-energy-presentation.pdf',
-      img: '/images/gallery5.jpg', // Replace with your actual image
-    },
-  ];
+    // ... other items
+  ]
+  
 
   return (
     <div className="downloads-page">

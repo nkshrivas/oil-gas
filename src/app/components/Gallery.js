@@ -42,7 +42,7 @@ const Gallery = () => {
                 <img
                   src={image}
                   alt={`Thumbnail ${index + 1}`}
-                  className={`object-cover transition-transform duration-200 ${selectedImageIndex === index ? 'scale-110 border-2 border-blue-500' : ''}`} // Highlight selected thumbnail
+                  className={`object-cover w-24 h-24 transition-transform duration-200 ${selectedImageIndex === index ? 'scale-110 border-2 border-blue-500' : ''}`} // Highlight selected thumbnail
                 />
               </div>
             </div>

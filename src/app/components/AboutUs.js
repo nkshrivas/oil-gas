@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from 'next/link';
 
 const AboutSection = () => {
     const [projects, setProjects] = useState(0);
@@ -106,7 +107,9 @@ const AboutSection = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                     <div className='lg:col-span-1'>
                         <h1 className='heading'>About us</h1>
-                        <button className='button mt-5 lg:mt-10'>More Information</button>
+                        <Link href='/about-us'>
+                            <button className='button mt-5 lg:mt-10'>More Information</button>
+                        </Link>
                     </div>
                     <div className='lg:col-span-2'>
                         <h6 className='color-secondary font-bold text-sm'>

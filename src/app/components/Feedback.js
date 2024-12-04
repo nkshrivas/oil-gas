@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Feedback = () => {
@@ -8,7 +9,9 @@ const Feedback = () => {
                     {/* Left Column - 2/12 width */}
                     <div className="col-span-12 md:col-span-3 p-x2">
                         <h1 className="heading">Feedback</h1>
-                        <button className="button mt-5 lg:mt-8">More Information</button>
+                        <Link href="/about-us">
+                            <button  className="button mt-5 lg:mt-8">More Information</button>
+                        </Link>
                     </div>
 
                     {/* Right Column - 10/12 width */}
